@@ -81,17 +81,5 @@ client.on('message', message => {
 });
 ;
 
-    if (msg.content == 'm!join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('✅'));
-     }
-    }
-}
-})
-client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get("515439643349745664").join(); //by : mahmodAR
-    });
 
 client.login(process.env.BOT_TOKEN);
