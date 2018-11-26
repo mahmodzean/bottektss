@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 console.log("mahmod");
 client.on('message', message => {
- var prefix = "!"
+ var prefix = "~"
     if(message.content.startsWith(prefix + 'new')) {
         let args = message.content.split(' ').slice(1).join(' ');
         let support = message.guild.roles.find("name","Support Team");
